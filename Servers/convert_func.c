@@ -1,6 +1,6 @@
 #include"convert_func.h"
 
-void func(int connfd){
+void func(connfd){
 	char buff[MAX];
 	int r=read(connfd,buff,sizeof(buff));
 	int i;
