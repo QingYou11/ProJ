@@ -1,5 +1,5 @@
-#ifndef		_QNET_H_
-#define		_QNET_H_
+#ifndef		_NET_H_
+#define		_NET_H_
 
 #include<sys/types.h>
 #include<sys/socket.h>
@@ -9,7 +9,7 @@
 #define	PORT	8080
 #define	SA	struct sockaddr
 
-int qNet(void);
-void qcloseNet(int connfd);
+int createNet(void);		
+void closeNet(int connfd);
 
-#endif		//_QNET_H_
+#endif		//_NET_H_

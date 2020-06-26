@@ -2,9 +2,9 @@
 int main(int argc,char *argv[]){
 	int connfd;
 
-	connfd=qNet();
+	connfd=createNet();
 	func(connfd);
-	qcloseNet(connfd);
+	closeNet(connfd);
 
 	return 0;
 }

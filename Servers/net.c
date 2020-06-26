@@ -1,9 +1,9 @@
-#include"qnet.h"
+#include"net.h"
 
 #include<stdio.h>
 #include<stdlib.h>
 
-int qNet(void){
+int createNet(void){
 	int sockfd,connfd,len;
 	char IP[32];
 	struct sockaddr_in servaddr,clie;
@@ -45,7 +45,7 @@ int qNet(void){
 	return connfd;
 }
 
-void qcloseNet(connfd){
+void closeNet(connfd){
 	close(connfd);
 	printf("服务器已关闭....\n");
 }
